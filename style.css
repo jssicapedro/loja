@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.borda{
+    border: 1px solid red;
+}
+
+.borda1{
+    border: 1px solid blue;
+}
+
+header, footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.desconto, .titulo, footer{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.desconto, footer{
+    background: #181818;
+    color: #fff;
+}
+
+.titulo{
+    background: #fff;
+    color: #181818;
+}
+
+.banner{
+    width: 100%;
+    height: 340px;
+    background: linear-gradient(90deg, #3b3b3b8c 0%, #3b3b3b8c 100%), url('img/Rectangle21.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+main{
+    max-width: 90vw;
+    margin: auto;
+}
+
+main .texto{
+    text-align: center;
+    margin: 2% 0;
+}
+
+.texto h1{
+    padding: 2% 0;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+}
+
+.linha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tenis{
+    box-sizing: content-box;
+    width: calc(50vw - 2%);
+    height: 35vh;
+    background: #EBE9EA;
+    margin: 2%;
+    display: flex;
+    
+}
+
+.centralizar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenis:hover{
+    background: linear-gradient(-45deg, #4b4b4b,#EBE9EA);
+    background-size: 400% 400%;
+    animation: back 5s ease-in infinite;
+}
+
+.tenis:hover img{
+    transform: scale(1.2);
+}
+
+@media (max-width:1000px){
+    .linha{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tenis{
+        width: calc(40vw - 2%);
+        height: 30vh;
+    }
+}
+
+
+@keyframes back{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
