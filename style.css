@@ -91,10 +91,12 @@ main .texto{
     background: linear-gradient(-45deg, #7a7979,#EBE9EA);
     background-size: 400% 400%;
     animation: back 5s ease-in infinite;
+   
 }
 
-.centralizar img{
-    width: 60%;
+.centralizar:hover img{
+    width: 60%; 
+    transform: scale(1.5)!important;
 }
 
 
