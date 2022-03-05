@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ylj8mcl.css">
 
     <title>JordanShoes</title>
 </head>
@@ -19,7 +21,7 @@
         <div class=" titulo">
             <p>JordanShoes</p>
         </div>
-        <div class=" banner">
+        <div data-aos="fade-right" class=" banner">
 
         </div>
     </header>
@@ -33,24 +35,24 @@
 
         <div class=" conteudo">
             <div class=" linha">
-                <article class=" tenis">
+                <article class=" tenis ">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-high-zoom-cmft-tropical-twist-1-400.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-high-zoom-cmft-tropical-twist-1-400.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-black-noble-red-w-1-1000.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-black-noble-red-w-1-1000.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-bright-citrus-1-1000 1.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-bright-citrus-1-1000 1.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-carbon-fiber-1-1000 1.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-carbon-fiber-1-1000 1.svg" alt="tenis nike">
                     </div>
                 </article>
             </div>
@@ -60,26 +62,27 @@
             <div class=" linha">
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-dutch-green-1-400.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-dutch-green-1-400.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-grey-camo-1-1000 1.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-grey-camo-1-1000 1.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-mid-light-smoke-grey-gs-1-1000.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-mid-light-smoke-grey-gs-1-1000.svg" alt="tenis nike">
                     </div>
                 </article>
                 <article class=" tenis">
                     <div class="centralizar">
-                        <img src="img/tenis/air-jordan-1-retro-high-court-purple-w-1-400.svg" alt="tenis nike">
+                        <img data-aos="fade-left" src="img/tenis/air-jordan-1-retro-high-court-purple-w-1-400.svg" alt="tenis nike">
                     </div>
                 </article>
             </div>
         </div>
+        
     </main>
 
 
@@ -87,7 +90,13 @@
         <p>Todos os direitos reservados</p>
     </footer>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 2500
+        });
+    </script>
 </body>
 
 </html>
